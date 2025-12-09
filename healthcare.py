@@ -236,8 +236,8 @@ if st.session_state.show_prescription_form:
             )
             # Pass is_medicine_request=True to format it correctly
             handle_final_response(med_prompt, is_medicine_request=True)
-            st.session_state.show_prescription_form = False
-            st.rerun()
+st.session_state.show_prescription_form = False
+st.rerun()
 
 # 2. CONTEXT DETAILS FORM
 if st.session_state.asking_for_details:
@@ -284,4 +284,5 @@ if not st.session_state.asking_for_details and not st.session_state.show_prescri
         else:
             # Standard Question flow
             handle_final_response(user_input)
+
             st.rerun()
