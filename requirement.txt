@@ -1,3 +1,7 @@
 streamlit
-streamlit-mic-recorder
 google-genai
+streamlit-mic-recorder
+google-auth
+google-api-core
+google!=1.0.0
+protobuf<=4.25.0
